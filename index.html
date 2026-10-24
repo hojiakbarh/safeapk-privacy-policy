@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SafeAPK Antivirus & Security</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --accent-green: #10b981;
+            --surface: #ffffff;
+            --background: #f1f5f9;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #cbd5e1;
+            --card-bg: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 44px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border);
+        }
+
+        /* Language Switcher */
+        .lang-switch-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--text-muted);
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        .meta-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 0.95rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            color: var(--text-main);
+            margin-top: 36px;
+            margin-bottom: 16px;
+            border-left: 5px solid var(--primary);
+            padding-left: 14px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+            margin: 20px 0 10px 0;
+        }
+
+        p, ul {
+            margin-bottom: 16px;
+            color: #334155;
+            font-size: 1.02rem;
+        }
+
+        ul {
+            padding-left: 26px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 1px solid #86efac;
+            border-radius: 14px;
+            padding: 24px;
+            margin: 26px 0;
+        }
+
+        .highlight-box h3 {
+            color: #14532d;
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .highlight-box p {
+            color: #166534;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 24px 0;
+            font-size: 0.95rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: #0f172a;
+            font-weight: 700;
+            border-bottom: 2px solid var(--border);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fbfcfe;
+        }
+
+        code {
+            background-color: #e2e8f0;
+            color: #0f172a;
+            padding: 2px 7px;
+            border-radius: 5px;
+            font-size: 0.88em;
+            font-family: Consolas, Monaco, "Andale Mono", monospace;
+        }
+
+        .contact-box {
+            background-color: var(--card-bg);
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            padding: 24px;
+            margin-top: 36px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+            table {
+                font-size: 0.88rem;
+            }
+            th, td {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Language Switcher -->
+    <div class="lang-switch-container">
+        <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">English (Official)</button>
+        <button class="lang-btn" id="btn-uz" onclick="setLanguage('uz')">O'zbekcha (Tarjima)</button>
+    </div>
+
+    <!-- ENGLISH SECTION (Default for Google Play verification) -->
+    <div id="content-en">
+        <div class="header">
+            <span class="badge">Google Play Developer Policy Compliant</span>
+            <h1>Privacy Policy for SafeAPK</h1>
+            <div class="meta-card">
+                <div class="meta-item">
+                    <strong>Application Name:</strong> SafeAPK
+                </div>
+                <div class="meta-item">
+                    <strong>Package ID:</strong> <code>com.hojiakbar.safeapk</code>
+                </div>
+                <div class="meta-item">
+                    <strong>Developer:</strong> Hojiakbar
+                </div>
+                <div class="meta-item">
+                    <strong>Effective & Last Updated:</strong> October 24, 2026
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>&#10003; Zero Data Collection & 100% On-Device Privacy</h3>
+            <p>SafeAPK is built strictly on an offline-first, privacy-preserving security model. All heuristic file evaluations, APK structure dissections, permission vulnerability audits, and malware threat scorings are processed entirely on your physical device. <strong>We do not collect, monitor, store, sell, or transmit any user files or personal identifiable information (PII) to remote servers.</strong></p>
+        </div>
+
+        <h2>1. Overview & Purpose</h2>
+        <p>This Privacy Policy provides clear, transparent information regarding how <strong>SafeAPK</strong> ("the Application", "we", "our") operates on Android devices. SafeAPK is a specialized mobile cybersecurity utility designed to protect users against malicious APK files, suspicious SMS grabbers, dropper anomalies, and rogue permissions before and after app installation.</p>
+
+        <h2>2. Information We Do NOT Collect</h2>
+        <p>To ensure maximum privacy protection for our users, SafeAPK adheres to strict data minimization principles:</p>
+        <ul>
+            <li><strong>No User Account or Registration:</strong> You do not need to create an account, log in, or provide an email, phone number, or password.</li>
+            <li><strong>No Financial or Banking Data:</strong> While SafeAPK offers an Emergency Financial Shield (allowing immediate one-tap hotline dialing and USSD shortcuts to freeze compromised cards during an attack), SafeAPK never accesses, reads, collects, or stores your credit card numbers, CVVs, passwords, or transaction histories.</li>
+            <li><strong>No Location Tracking:</strong> The application does not request or track GPS, network, or background location.</li>
+            <li><strong>No Remote File Uploads:</strong> When you select an APK file from storage for inspection, the binary and manifest headers are parsed in local volatile memory. The file is never transferred across the internet.</li>
+        </ul>
+
+        <h2>3. Device Permissions & Technical Justifications</h2>
+        <p>SafeAPK requires specific system permissions solely to perform its essential cybersecurity functions. We never misuse or repurpose these permissions:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 28%;">Permission</th>
+                    <th style="width: 32%;">Why SafeAPK Needs It</th>
+                    <th style="width: 40%;">Privacy Guarantee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>QUERY_ALL_PACKAGES</code><br>(Installed App Inspection)</td>
+                    <td>SafeAPK is an antivirus and threat audit utility. It needs to inspect installed applications to detect hidden malware, Trojan dropper characteristics, and hazardous permissions that could threaten your security.</td>
+                    <td>All package analysis happens 100% on-device in real-time. No list of your installed apps is ever transmitted or shared with external parties.</td>
+                </tr>
+                <tr>
+                    <td><code>READ_EXTERNAL_STORAGE</code> / Storage Access</td>
+                    <td>Enables the user to browse and pick downloaded APK files from device storage to conduct a pre-installation security verification.</td>
+                    <td>Only the APK file specifically chosen by you is read locally for manifest and certificate integrity checks. No personal photos, documents, or media are read.</td>
+                </tr>
+                <tr>
+                    <td><code>CALL_PHONE</code><br>(Emergency Financial Shield)</td>
+                    <td>Allows the user to trigger immediate, one-tap emergency calls to official bank hotlines or execute USSD card-blocking codes when a financial threat or trojan is detected.</td>
+                    <td>Calls and USSD actions are only triggered upon your direct, deliberate tap on an emergency action button. SafeAPK never makes background or automated calls.</td>
+                </tr>
+                <tr>
+                    <td><code>POST_NOTIFICATIONS</code></td>
+                    <td>Sends system notifications when a malware scan completes or when a severe security risk is detected in an inspected file.</td>
+                    <td>Used purely for local on-device alert delivery. Can be disabled anytime in Android settings.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>4. Third-Party Services & Libraries</h2>
+        <p>SafeAPK keeps external dependencies to the absolute minimum:</p>
+        <ul>
+            <li><strong>Google Play In-App Updates:</strong> We utilize official Google Play In-App Update APIs to inform you when critical security engine updates are available on Google Play. This interaction is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+            <li><strong>Zero Advertising SDKs:</strong> SafeAPK does not contain third-party advertising SDKs, behavioral analytics, user tracking trackers, or data-broker libraries.</li>
+        </ul>
+
+        <h2>5. Data Retention & Deletion Policy</h2>
+        <p>All scan history logs, security score records, and user preferences are saved locally on your device within the app's sandboxed private storage. You have complete control:</p>
+        <ul>
+            <li>You can clear all scan logs at any time inside the app settings.</li>
+            <li>Uninstalling SafeAPK or clearing app data via Android Settings immediately and permanently deletes all locally cached scan logs and preferences.</li>
+        </ul>
+
+        <h2>6. Children's Privacy (COPPA / GDPR-K Compliance)</h2>
+        <p>SafeAPK does not target or knowingly collect any personal information from children under the age of 13 (or under 16 in the European Union). Because no personal information is collected from any user, children's privacy is rigorously respected.</p>
+
+        <h2>7. Policy Updates</h2>
+        <p>We may periodically revise this Privacy Policy to reflect app updates or regulatory adjustments. Any revisions will be published on this URL with an updated "Last Updated" timestamp.</p>
+
+        <h2>8. Contact & Developer Information</h2>
+        <div class="contact-box">
+            <p>If you have any questions, feedback, or verification inquiries concerning this Privacy Policy, please contact the developer directly:</p>
+            <p style="margin-top: 10px;"><strong>Developer / Publisher:</strong> Hojiakbar</p>
+            <p><strong>Official Contact Email:</strong> <a href="mailto:growwithgrowfit@gmail.com">growwithgrowfit@gmail.com</a></p>
+            <p><strong>Package Name:</strong> <code>com.hojiakbar.safeapk</code></p>
+        </div>
+    </div>
+
+    <!-- UZBEK SECTION (O'zbek tilidagi tushunarli tarjima) -->
+    <div id="content-uz" style="display: none;">
+        <div class="header">
+            <span class="badge">Google Play Siyosatiga To'liq Mos</span>
+            <h1>SafeAPK Maxfiylik Siyosati (Privacy Policy)</h1>
+            <div class="meta-card">
+                <div class="meta-item">
+                    <strong>Ilova nomi:</strong> SafeAPK
+                </div>
+                <div class="meta-item">
+                    <strong>Paket ID:</strong> <code>com.hojiakbar.safeapk</code>
+                </div>
+                <div class="meta-item">
+                    <strong>Dasturchi:</strong> Hojiakbar
+                </div>
+                <div class="meta-item">
+                    <strong>Kuchga kirgan sana:</strong> 24-Oktyabr, 2026-yil
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>&#10003; 100% Qurilma Ichida (On-Device) Maxfiylik Kafolati</h3>
+            <p>SafeAPK ilovasi to'liq oflayn va maxfiylikni birinchi o'ringa qo'yuvchi arxitekturaga ega. Barcha APK tahlillari, zararli dasturlarni (viruslar, troyanlar) aniqlash va xavfsizlik darajasini baholash <strong>faqat sizning qurilmangiz ichida</strong> amalga oshiriladi. <strong>Biz foydalanuvchilarning shaxsiy ma'lumotlarini yoki fayllarini hech qachon serverlarga yubormaymiz, saqlamaymiz va uchinchi shaxslarga sotmaymiz.</strong></p>
+        </div>
+
+        <h2>1. Umumiy ma'lumot</h2>
+        <p>Ushbu Maxfiylik Siyosati <strong>SafeAPK</strong> ilovasi ("Ilova", "biz") foydalanuvchi ma'lumotlari bilan qanday ishlashini to'liq va shaffof tushuntirib beradi. SafeAPK — bu Android qurilmalari uchun mo'ljallangan kiberxavfsizlik va antivirus yordamchisi bo'lib, uning asosiy vazifasi APK fayllarni o'rnatishdan oldin va o'rnatilgan dasturlarni tahlil qilib, foydalanuvchini xavfli fishing, SMS o'g'rilari va yashirin troyanlardan himoya qilishdir.</p>
+
+        <h2>2. Biz qanday ma'lumotlarni YIG'MAYMIZ?</h2>
+        <p>Foydalanuvchilarning mutlaq xavfsizligini ta'minlash uchun SafeAPK quyidagi ma'lumotlarni mutlaqo yig'maydi:</p>
+        <ul>
+            <li><strong>Ro'yxatdan o'tish talab etilmaydi:</strong> Ilovada profil ochish, ism, telefon raqami yoki parol kiritish shart emas.</li>
+            <li><strong>Bank va moliya ma'lumotlari yig'ilmaydi:</strong> Ilovadagi "Favqulodda moliyaviy qalqon" (bank call-markazlariga tezkor qo'ng'iroq va USSD orqali kartani tezda bloklash) faqat rasmiy raqamlarga yo'naltiradi, ilova hech qachon sizning bank karta raqamlaringiz yoki pullaringizga daxl qilmaydi.</li>
+            <li><strong>Joylashuv (GPS) kuzatilmaydi:</strong> Ilova joylashuv ma'lumotlarini so'ramaydi va kuzatmaydi.</li>
+            <li><strong>Fayllar internetga yuklanmaydi:</strong> Siz tekshirish uchun tanlagan APK fayli faqat telefon xotirasida evristik tahlil qilinadi, serverga jo'natilmaydi.</li>
+        </ul>
+
+        <h2>3. Ilova so'raydigan ruxsatnomalar va ularning sabablari</h2>
+        <p>SafeAPK faqat o'zining to'g'ridan-to'g'ri xavfsizlik vazifalarini bajarish uchun eng zarur ruxsatlarni so'raydi:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 28%;">Ruxsatnoma</th>
+                    <th style="width: 32%;">Nima uchun kerak?</th>
+                    <th style="width: 40%;">Maxfiylik kafolati</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>QUERY_ALL_PACKAGES</code><br>(O'rnatilgan ilovalar ro'yxati)</td>
+                    <td>Qurilmadagi o'rnatilgan ilovalarni skanerlab, ular orasida yashirin SMS troyanlar, xavfli ruxsatnomalarga ega shubhali ilovalarni aniqlash uchun kerak.</td>
+                    <td>Tahlil 100% telefon ichida amalga oshiriladi. O'rnatilgan ilovalaringiz ro'yxati hech qachon tashqariga yuborilmaydi.</td>
+                </tr>
+                <tr>
+                    <td><code>READ_EXTERNAL_STORAGE</code> / Xotiraga kirish</td>
+                    <td>Foydalanuvchi yuklab olgan APK faylni o'rnatishdan oldin tanlab, uning xavfsizligini tekshirishi uchun kerak.</td>
+                    <td>Faqat siz tanlagan APK fayli o'qiladi. Shaxsiy fotosuratlar, videolar yoki hujjatlarga tegilmaydi.</td>
+                </tr>
+                <tr>
+                    <td><code>CALL_PHONE</code><br>(Favqulodda qo'ng'iroq)</td>
+                    <td>Xavfli troyan aniqlanganda, foydalanuvchi birgina tugmani bosish orqali o'z bankining ishonch telefoniga qo'ng'iroq qilishi yoki kartani bloklash USSD kodini yuborishi uchun xizmat qiladi.</td>
+                    <td>Faqat siz tugmani bosganingizdagina qo'ng'iroq boshlanadi. Ilova hech qachon o'zboshimchalik bilan orqa fonda qo'ng'iroq qilmaydi.</td>
+                </tr>
+                <tr>
+                    <td><code>POST_NOTIFICATIONS</code></td>
+                    <td>Skanerlash yakunlangani va xavfli fayllar topilgani haqida xabar berish uchun.</td>
+                    <td>Faqat ogohlantirish uchun ishlatiladi, istalgan vaqtda o'chirib qo'yish mumkin.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>4. Uchinchi tomon xizmatlari</h2>
+        <p>SafeAPK tashqi servislarga minimal bog'langan:</p>
+        <ul>
+            <li><strong>Google Play In-App Updates:</strong> Xavfsizlik bazasi va ilovani doimiy eng so'nggi versiyada ushlab turish uchun Google Play yangilanish xizmatidan foydalanadi.</li>
+            <li><strong>Hech qanday reklama yoki trekerlar yo'q:</strong> SafeAPK ichida reklama tarmoqlari, foydalanuvchini kuzatuvchi SDK'lar umuman mavjud emas.</li>
+        </ul>
+
+        <h2>5. Ma'lumotlarni o'chirish va saqlash</h2>
+        <p>Barcha tekshiruvlar tarixi faqat telefoningiz xotirasida saqlanadi. Ilovani o'chirganingizda (uninstall) yoki dastur sozlamalaridan keshni tozalaganingizda barcha ma'lumotlar bir zumda butunlay o'chib ketadi.</p>
+
+        <h2>6. Bolalar maxfiyligi</h2>
+        <p>SafeAPK 13 yoshga to'lmagan bolalardan qasddan hech qanday ma'lumot to'plamaydi. Ilova barcha yoshdagilar uchun xavfsiz foydali vositadir.</p>
+
+        <h2>7. Dasturchi bilan bog'lanish</h2>
+        <div class="contact-box">
+            <p>Maxfiylik siyosati bo'yicha savollaringiz yoki takliflaringiz bo'lsa, to'g'ridan-to'g'ri dasturchiga murojaat qilishingiz mumkin:</p>
+            <p style="margin-top: 10px;"><strong>Dasturchi:</strong> Hojiakbar</p>
+            <p><strong>Elektron pochta:</strong> <a href="mailto:growwithgrowfit@gmail.com">growwithgrowfit@gmail.com</a></p>
+            <p><strong>Ilova identifikatori:</strong> <code>com.hojiakbar.safeapk</code></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 SafeAPK Security Project. All rights reserved.
+    </div>
+</div>
+
+<script>
+    function setLanguage(lang) {
+        var enContent = document.getElementById('content-en');
+        var uzContent = document.getElementById('content-uz');
+        var btnEn = document.getElementById('btn-en');
+        var btnUz = document.getElementById('btn-uz');
+
+        if (lang === 'uz') {
+            enContent.style.display = 'none';
+            uzContent.style.display = 'block';
+            btnUz.classList.add('active');
+            btnEn.classList.remove('active');
+        } else {
+            enContent.style.display = 'block';
+            uzContent.style.display = 'none';
+            btnEn.classList.add('active');
+            btnUz.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>
